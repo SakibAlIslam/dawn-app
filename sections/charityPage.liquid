@@ -5,7 +5,6 @@
     {% assign randomNumber = "now" | date: "%N" | modulo: diff | plus: min %}
     {% assign charity = "charity" | append: "-" | append: randomNumber %}
     {{ pages[charity].content }}
-    <script> console.log( {{ charity }} ); </script>
 </div>
 {% schema %}
 {
